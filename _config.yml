@@ -105,3 +105,17 @@ highlighter: rouge
 plugins_dir:
   - jekyll-redirect-from
   - jekyll-paginate
+
+episode_order:
+  - 05-understanding-yaml-and-ci.md
+  - 06-coffee.md
+  - 07-hello-world-ci.md
+  - 08-adding-ci-to-your-code.md
+  - 09-eins-zwei-dry.md
+  - 10-coffee.md
+  - 11-the-worlds-a-stage.md
+  - 12-skim-milk.md
+  - 13-the-spy-game.md
+  - 14-plotting-to-take-over-the-world.md
+  - 15-a-simple-test.md
+  - 16-homework.md
