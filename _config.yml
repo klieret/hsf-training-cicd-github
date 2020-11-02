@@ -107,15 +107,15 @@ plugins_dir:
   - jekyll-paginate
 
 episode_order:
-  - 05-understanding-yaml-and-ci.md
-  - 06-coffee.md
-  - 07-hello-world-ci.md
-  - 08-adding-ci-to-your-code.md
-  - 09-eins-zwei-dry.md
-  - 10-coffee.md
-  - 11-the-worlds-a-stage.md
-  - 12-skim-milk.md
-  - 13-the-spy-game.md
-  - 14-plotting-to-take-over-the-world.md
-  - 15-a-simple-test.md
-  - 16-homework.md
+  - 05-understanding-yaml-and-ci
+  - 06-coffee
+  - 07-hello-world-ci
+  - 08-adding-ci-to-your-code
+  - 09-eins-zwei-dry
+  - 10-coffee
+  - 11-the-worlds-a-stage
+  - 12-skim-milk
+  - 13-the-spy-game
+  - 14-plotting-to-take-over-the-world
+  - 15-a-simple-test
+  - 16-homework
