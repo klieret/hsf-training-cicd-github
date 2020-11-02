@@ -68,6 +68,9 @@ start_time: 0
 
 # Specify that things in the episodes collection should be output.
 collections:
+  basics:
+    output: true
+    permalink: /:path/index.html      
   episodes:
     output: true
     permalink: /:path/index.html
@@ -107,6 +110,7 @@ plugins_dir:
   - jekyll-paginate
 
 episode_order:
+  - 01-introduction
   - 05-understanding-yaml-and-ci
   - 06-coffee
   - 07-hello-world-ci
