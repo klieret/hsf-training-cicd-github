@@ -111,6 +111,9 @@ plugins_dir:
 
 episode_order:
   - 01-introduction
+  - 02-enter-sandman
+  - 03-pytest-revisited
+  - 04-understanding-yaml
   - 05-understanding-yaml-and-ci
   - 06-coffee
   - 07-hello-world-ci
