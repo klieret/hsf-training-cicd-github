@@ -15,12 +15,20 @@ jobs:
           rm -rf common
           ls _episodes/
 
+#      - name: Build
+#        run: |
+#          docker run --rm \
+#          --volume="${{ github.workspace }}:/srv/jekyll" \
+#          jekyll/builder:latest /bin/bash -c "gem install bundler && \
+#          chmod -R 777 /srv/jekyll && \
+#          bundle install && \
+#          bundle exec jekyll build --trace"
+
       - name: Build
         run: |
           docker run --rm \
-          --volume="${{ github.workspace }}:/srv/jekyll" \
-          carpentries/lesson-docker:latest /bin/bash -c "gem install bundler && bundle config --local set path .vendor/bundle && \
-          chmod -R 777 /srv/jekyll && \
+          -v $${PWD}:/home/rstudio \
+          carpentries/lesson-docker:latest /bin/bash -c "gem install bundler && \
+          bundle config --local set path .vendor/bundle && \
           bundle install && \
           bundle exec jekyll build --trace"
-          #jekyll/builder:latest /bin/bash -c "gem install bundler && \
