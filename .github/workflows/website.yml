@@ -19,8 +19,8 @@ jobs:
         run: |
           docker run --rm \
           --volume="${{ github.workspace }}:/srv/jekyll" \
-          #jekyll/builder:latest /bin/bash -c "gem install bundler && \
           carpentries/lesson-docker:latest /bin/bash -c "gem install bundler && bundle config --local set path .vendor/bundle && \
           chmod -R 777 /srv/jekyll && \
           bundle install && \
           bundle exec jekyll build --trace"
+          #jekyll/builder:latest /bin/bash -c "gem install bundler && \
