@@ -109,20 +109,20 @@ plugins_dir:
   - jekyll-redirect-from
   - jekyll-paginate
 
-episode_order:
-  - 01-introduction
-  - 02-enter-sandman
-  - 03-pytest-revisited
-  - 04-understanding-yaml
-  - 05-understanding-yaml-and-ci
-  - 06-coffee
-  - 07-hello-world-ci
-  - 08-adding-ci-to-your-code
-  - 09-eins-zwei-dry
-  - 10-coffee
-  - 11-the-worlds-a-stage
-  - 12-skim-milk
-  - 13-the-spy-game
-  - 14-plotting-to-take-over-the-world
-  - 15-a-simple-test
-  - 16-homework
+#episode_order:
+#  - 01-introduction
+#  - 02-enter-sandman
+#  - 03-pytest-revisited
+#  - 04-understanding-yaml
+#  - 05-understanding-yaml-and-ci
+#  - 06-coffee
+#  - 07-hello-world-ci
+#  - 08-adding-ci-to-your-code
+#  - 09-eins-zwei-dry
+#  - 10-coffee
+#  - 11-the-worlds-a-stage
+#  - 12-skim-milk
+#  - 13-the-spy-game
+#  - 14-plotting-to-take-over-the-world
+#  - 15-a-simple-test
+#  - 16-homework
