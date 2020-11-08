@@ -13,12 +13,14 @@ jobs:
           git clone https://github.com/enibigir/hsf-training-cicd-basics-webpage.git common
           cp common/_episodes/*.md _episodes/
           rm -rf common
+          ls _episodes/
 
       - name: Build
         run: |
           docker run --rm \
           --volume="${{ github.workspace }}:/srv/jekyll" \
-          jekyll/builder:latest /bin/bash -c "gem install bundler && \
+          #jekyll/builder:latest /bin/bash -c "gem install bundler && \
+          carpentries/lesson-docker:latest /bin/bash -c "gem install bundler && bundle config --local set path .vendor/bundle && \
           chmod -R 777 /srv/jekyll && \
           bundle install && \
           bundle exec jekyll build --trace"
