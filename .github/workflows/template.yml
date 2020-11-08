@@ -2,7 +2,7 @@ name: Test template
 on:
   push:
     branches: gh-pages
-  pull_request:
+#  pull_request:
 jobs:
   check-template:
     name: ${{ matrix.lesson-name }} (${{ matrix.os-name }})
