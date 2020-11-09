@@ -15,6 +15,10 @@ jobs:
           rm -rf common
           ls _episodes/
 
+      - name: Ls
+
+        run: ls
+
       - name: Build
         run: |
           docker run --rm \
@@ -23,6 +27,9 @@ jobs:
           bundle config --local set path .vendor/bundle && \
           bundle install && \
           bundle exec jekyll build --trace"
+
+      - name: ls-after
+        run: ls; ls _site/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
