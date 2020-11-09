@@ -15,9 +15,18 @@ jobs:
           rm -rf common
           ls _episodes/
 
+      - name: Build
+        run: |
+          docker run --rm \
+          --volume="${{ github.workspace }}:/home/rstudio" \
+          carpentries/lesson-docker:latest /bin/bash -c "gem install bundler && \
+          bundle config --local set path .vendor/bundle && \
+          bundle install && \
+          bundle exec jekyll build --trace"
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          enable_jekyll: true
+          enable_jekyll: false
