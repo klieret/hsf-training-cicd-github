@@ -26,7 +26,7 @@ jobs:
           carpentries/lesson-docker:latest /bin/bash -c "gem install bundler && \
           bundle config --local set path .vendor/bundle && \
           bundle install && \
-          bundle exec jekyll build --trace"
+          bundle exec jekyll build --trace --verbose"
 
       - name: ls-after
         run: ls; ls _site/
